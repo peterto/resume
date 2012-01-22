@@ -1,0 +1,246 @@
+/* colors
+ * gray: #615F58;
+ * dark-gray: #333129;
+ * burgundy: #784241;
+ * red-orange: #FA2E05;
+ * peach: #FFD587;
+ * off white: #FEFFF8;
+ */
+
+/* fonts */
+
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('fonts/Roboto-Regular-webfont.eot');
+    src: url('fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Roboto-Regular-webfont.woff') format('woff'),
+         url('fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Roboto-Regular-webfont.svg#RobotoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoItalic';
+    src: url('fonts/Roboto-Italic-webfont.eot');
+    src: url('fonts/Roboto-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Roboto-Italic-webfont.woff') format('woff'),
+         url('fonts/Roboto-Italic-webfont.ttf') format('truetype'),
+         url('fonts/Roboto-Italic-webfont.svg#RobotoItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoBold';
+    src: url('fonts/Roboto-Bold-webfont.eot');
+    src: url('fonts/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Roboto-Bold-webfont.woff') format('woff'),
+         url('fonts/Roboto-Bold-webfont.ttf') format('truetype'),
+         url('fonts/Roboto-Bold-webfont.svg#RobotoBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* reset */
+*, html {
+	margin: 0;
+	padding: 0;
+}
+
+ul { 
+	list-style: none; 
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+
+a, a:link, a:hover, a:focus {
+	outline: none;
+	text-decoration: none;
+	color: #333129;
+	font-size: 1.1em;
+}
+
+a img {
+	border: none;
+}
+
+/* body */
+
+body {
+	font: 100%/1.4 "RobotoRegular", Helvetica, Arial, sans-serif;
+	background: url(../images/fabric_plaid.png) repeat;
+	color: #333129;
+	background-color: #FEFFF8;
+}
+
+div#wrapper {
+	margin: 0 auto;
+	width: 100%;
+	padding: 0;
+}
+
+/* header and nav */
+header#main {
+	/* border: 1px solid #F00808; */
+	margin-bottom: 50px;
+	text-align: left;
+	color: #FEFFF8;
+	position: relative;
+	width: 100%;
+}
+
+#main span {
+	color: #FEFFF8;
+	padding-left: 75px;
+}
+
+header nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 30px;
+	background-color: #333129;
+	margin-bottom: 30px;
+	padding-top: 15px;
+}
+
+header nav img {
+	position: absolute;
+	top: 2px;
+	left: 750px;
+}
+
+/* container */
+
+div#container {
+	margin-left: 75px;
+	width: 100%;
+}
+
+
+/* left side bar*/
+div#container section#leftsidebar {
+	float: left;
+	margin-right: 50px;
+	width: 100px;
+	height: 400px;
+}
+
+div#container nav {
+	margin-top: 180px;
+}
+
+div#container section#subtitle {
+	float: left;
+	font-size: 3em;
+	line-height: 1.4em;
+	width: 100px;
+	height: 100px;
+	color: #333129;
+}
+
+div#container nav a:link, div#container nav a:visited {
+	color: #615F58;
+}
+
+div#container nav a:active {
+	color: #333129;
+	border-bottom: 5px solid #333129;
+}
+
+div#container nav a:visited {
+	border-bottom: 5px solid #333129;
+}
+
+div#container nav a:hover {
+	color: #333129;
+	border-bottom: 5px solid #FA2E05;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+div#container h1 span {
+	border-bottom: 5px solid #333129;
+}
+
+/* content */
+
+section#resume {
+	visibility: hidden;
+}
+
+section#content, section#resume {
+	float: left;
+	margin-left: 100px;
+	margin-top: 25px; 
+	width: 500px; 
+}
+
+section#resume div {
+	margin-top: 10px;
+}
+
+section#resume span {
+	font-weight: bold;
+}
+
+section#content span {
+	background-color: #FA2E05;
+	color: #FEFFF8;
+}
+
+section#POS {
+	width: 475px;
+}
+
+section#content a, section#content a:link, section#content a:visited {
+	background-color: #FA2E05;
+	color: #FEFFF8;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+
+section#content a:link {
+}
+
+section#content a:hover {
+	background-color: #FEFFF8;
+	color: #FA2E05;
+}
+
+#pointsOfInterests, #bio {
+	margin: 20px 0px 0px 0px;
+	float: left;
+	width: 480px;
+}
+
+#pointsOfInterests {
+/*	width: 190px;
+	height: 150px; */
+	height: 320px;
+	border: 5px solid #333129;
+	text-align: center;
+	background-color: white;
+	visibility: hidden;
+}
+
+#pointsOfInterests, #pointsOfInterests iframe {
+	height: 320px;
+	width: 480px;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+#bio {
+	margin: 20px 0px 0px 0px;
+	height: 250px;
+}
+
